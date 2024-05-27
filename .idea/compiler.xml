@@ -9,5 +9,8 @@
         <module name="sgre" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sgre" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
