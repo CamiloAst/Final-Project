@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "co.edu.uniquindio.proyecto.sgre.viewController.eventoViewController">
+   <children>
+      <SplitPane dividerPositions="0.3907593123209168" layoutX="207.0" layoutY="74.0" orientation="VERTICAL" prefHeight="444.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="598.0">
+               <children>
+                  <GridPane layoutX="23.0" layoutY="14.0" prefHeight="202.0" prefWidth="552.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="ID" />
+                              <TextField alignment="CENTER" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Fecha" />
+                              <TextField alignment="CENTER" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Empleado" />
+                              <TextField alignment="CENTER" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label text="Nombre" />
+                              <TextField alignment="CENTER" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Capacidad Maxima" />
+                              <TextField alignment="CENTER" prefHeight="26.0" prefWidth="69.0" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Descripción" />
+                              <TextField alignment="CENTER" prefHeight="41.0" prefWidth="183.0" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label text="Reservas" />
+                              <TextField alignment="CENTER" HBox.hgrow="SOMETIMES" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView layoutY="47.0" prefHeight="243.0" prefWidth="598.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="ID" />
+                      <TableColumn prefWidth="75.0" text="Nombre" />
+                        <TableColumn prefWidth="75.0" text="Fecha" />
+                        <TableColumn prefWidth="75.0" text="Capacidad " />
+                        <TableColumn prefWidth="75.0" text="Empleado" />
+                        <TableColumn prefWidth="75.0" text="Reservas" />
+                        <TableColumn prefWidth="146.39999999999998" text="Descripción " />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="598.0" spacing="120.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefWidth="110.0" text="Nuevo" />
+                        <Button mnemonicParsing="false" prefWidth="110.0" text="Agregar" />
+                        <Button mnemonicParsing="false" prefWidth="110.0" text="Actualizar" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <Button layoutX="261.0" layoutY="298.0" mnemonicParsing="false" prefWidth="110.0" text="Eliminar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
